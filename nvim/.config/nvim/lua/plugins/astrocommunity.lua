@@ -6,7 +6,7 @@ return {
   { import = "astrocommunity.motion.nvim-tree-pairs" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
-  { import = "astrocommunity.diagnostics.error-lens-nvim" },
+  -- { import = "astrocommunity.diagnostics.error-lens-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.split-and-window.mini-map" },
   { import = "astrocommunity.recipes.auto-session-restore" },
