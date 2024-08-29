@@ -28,6 +28,8 @@ return {
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.godot" },
 
+  { import = "astrocommunity.test.neotest" },
+
   -- ui customization
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
