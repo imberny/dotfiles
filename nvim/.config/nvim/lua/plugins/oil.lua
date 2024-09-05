@@ -3,6 +3,19 @@
 return {
   "stevearc/oil.nvim",
   cmd = "Oil",
+  opts = {
+    view_options = {
+      show_hidden = true,
+      columns = {
+        {
+          "icon",
+          default_file = require("astroui").get_icon "DefaultFile",
+          directory = require("astroui").get_icon "FolderClosed",
+        },
+      },
+    },
+  },
+
   dependencies = {
     {
       "AstroNvim/astrocore",
@@ -71,9 +84,4 @@ return {
     -- Disable neo-tree
     { "neo-tree.nvim", optional = true, enabled = false },
   },
-
-  opts = function()
-    local get_icon = require("astroui").get_icon
-    return { columns = { { "icon", default_file = get_icon "DefaultFile", directory = get_icon "FolderClosed" } } }
-  end,
 }
