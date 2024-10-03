@@ -5,8 +5,8 @@ return {
     opts = {
       mappings = {
         n = {
-          ["dk"] = { function() require("dap").up() end, desc = "Move up in stacktrace" },
-          ["dj"] = { function() require("dap").down() end, desc = "Move down in stacktrace" },
+          ["dK"] = { function() require("dap").up() end, desc = "Move up in stacktrace" },
+          ["dJ"] = { function() require("dap").down() end, desc = "Move down in stacktrace" },
         },
       },
     },
