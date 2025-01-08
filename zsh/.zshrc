@@ -26,4 +26,5 @@ export WINEARCH=win64
 
 # To use nvim as Godot's external code editor
 alias gdvim='nvim --listen /tmp/godot.pipe'
+alias godot=~/Godot_v4.4-dev7_linux.x86_64
 
