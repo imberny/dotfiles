@@ -6,4 +6,6 @@
 
 VERSION 1
 
+f8038bea-e32e-47c1-92be-0305a5024cac:Brushes:Brushes
+3b9e46c1-c5a7-49c9-940e-249e5c154180:Brushes/Mesh Texture Paint:Brushes-Mesh Texture Paint
 d852e2b0-03f9-4066-baa8-e0b16be7259d:Procedural Materials:Procedural Materials
