@@ -9,6 +9,7 @@ return {
   -- { import = "astrocommunity.diagnostics.error-lens-nvim" },
 
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+  { import = "astrocommunity.debugging.nvim-dap-repl-highlights" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.split-and-window.mini-map" },
   { import = "astrocommunity.recipes.auto-session-restore" },
