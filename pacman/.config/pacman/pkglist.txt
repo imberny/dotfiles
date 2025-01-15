@@ -136,7 +136,6 @@ kgraphviewer
 khotkeys
 kinfocenter
 kio-extras
-kmail
 kmenuedit
 krita
 kscreen
