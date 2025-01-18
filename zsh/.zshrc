@@ -25,6 +25,6 @@ export SHELL=/bin/zsh
 export WINEARCH=win64
 
 # To use nvim as Godot's external code editor
-alias gdvim='nvim --listen /tmp/godot.pipe'
-alias godot=~/Godot_v4.4-dev4_linux.x86_64
+alias gdvim='nvim -u ~/.config/nvim/gd_init.lua --listen /tmp/godot.pipe'
+alias godot=~/Godot_v4.4-beta1_linux.x86_64
 

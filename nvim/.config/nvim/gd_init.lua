@@ -20,3 +20,12 @@ end
 
 require "lazy_setup"
 require "polish"
+-- TODO: figure out how to load config folder instead of individual files
+-- require "config.gdscript"
+require("telescope").setup {
+  defaults = {
+    file_ignore_patterns = {
+      "%.uid",
+    },
+  },
+}
