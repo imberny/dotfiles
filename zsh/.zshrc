@@ -8,7 +8,6 @@ fi
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # enable python's virtual environment
 source ~/.venv/bin/activate
-pushd /media/sdb1 > /dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -26,5 +25,4 @@ export WINEARCH=win64
 
 # To use nvim as Godot's external code editor
 alias gdvim='nvim -u ~/.config/nvim/gd_init.lua --listen /tmp/godot.pipe'
-alias godot=~/Godot_v4.4-beta1_linux.x86_64
-
+alias godot='/home/bernardc/.local/share/Godot-Manager/versions/4.3-stable/Godot_v4.3-stable_linux.x86_64'
