@@ -110,6 +110,7 @@ gnome-user-docs
 gnome-user-share
 gnome-weather
 go
+godot-manager-bin
 gparted
 grep
 grilo-plugins
@@ -154,10 +155,7 @@ jdk8-openjdk
 jfsutils
 jre8-openjdk
 jre8-openjdk-headless
-kcachegrind
-kdenlive
 kernel-alive
-kgraphviewer
 krita
 ksystemlog
 kwayland-integration
