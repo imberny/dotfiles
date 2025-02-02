@@ -22,7 +22,6 @@ baobab
 base-devel
 bash-completion
 bison
-blender-launcher-v2-bin
 bluez-utils
 bottom
 btrfs-progs
@@ -31,6 +30,7 @@ cargo-nextest
 cataclysm-dda-tiles
 ccache
 cloc
+code
 coreutils
 cpupower
 cronie
@@ -74,6 +74,7 @@ garcon
 gawk
 gcc-libs
 gcolor2
+gdb
 gdm
 gdu
 gettext
@@ -157,7 +158,6 @@ jre8-openjdk
 jre8-openjdk-headless
 kernel-alive
 krita
-ksystemlog
 kwayland-integration
 laigter-appimage
 lazygit
