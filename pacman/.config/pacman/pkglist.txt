@@ -1,3 +1,4 @@
+7zip
 accountsservice
 acpi
 acpid
@@ -180,13 +181,12 @@ libva-intel-driver
 licenses
 light-locker
 linux-firmware
-linux510
-linux510-nvidia
 linux515
-linux515-nvidia
 linux61
 linux61-headers
-linux61-nvidia
+linux66
+linux66-headers
+linux66-virtualbox-host-modules
 lld
 lldb
 llvm
@@ -194,6 +194,7 @@ logrotate
 loupe
 lsb-release
 luarocks
+lutris
 lvm2
 m4
 make
@@ -216,6 +217,7 @@ manjaro-system
 manjaro-wallpapers-18.0
 manjaro-xfce-settings
 matcha-gtk-theme
+material-maker-bin
 mdadm
 memtest86+
 menulibre
@@ -250,7 +252,9 @@ nss-mdns
 ntfs-3g
 ntp
 numlockx
+nvidia-dkms
 nvidia-prime
+nvidia-settings
 nvidia-utils
 obs-studio
 openmw
@@ -261,7 +265,6 @@ optimus-manager
 orca
 os-prober
 otf-cascadia-code
-p7zip
 pacman
 pacutils
 pamac-gtk
@@ -349,6 +352,7 @@ valgrind
 vi
 viewnior
 vim
+virtualbox
 vlc
 vulkan-intel
 vulkan-radeon
@@ -357,7 +361,7 @@ wallpapers-2018
 wallpapers-juhraya
 wget
 which
-wine
+wine-staging
 wpa_supplicant
 xboxdrv
 xclip
