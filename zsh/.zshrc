@@ -23,6 +23,14 @@ export SHELL=/bin/zsh
 # Wine
 export WINEARCH=win64
 
+alias ls='ls --color'
+alias ll='ls -l --color'
+alias lh='ll -h'
+
+# flatpaks
+alias blender='org.blender.Blender'
+
 # To use nvim as Godot's external code editor
 alias gdvim='nvim -u ~/.config/nvim/gd_init.lua --listen /tmp/godot.pipe'
-alias godot='/home/bernardc/.local/share/Godot-Manager/versions/4.3-stable/Godot_v4.3-stable_linux.x86_64'
+alias godot='/home/bernardc/.local/share/Godot-Manager/versions/4.4-stable/Godot_v4.4-stable_linux.x86_64'
+
