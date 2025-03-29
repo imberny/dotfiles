@@ -36,7 +36,7 @@ return {
   -- ui customization
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
-  { import = "astrocommunity.scrolling.neoscroll-nvim" },
-  { import = "astrocommunity.indent.mini-indentscope" },
+  -- { import = "astrocommunity.scrolling.neoscroll-nvim" }, -- replaced by snacks
+  -- { import = "astrocommunity.indent.mini-indentscope" }, -- replaced by snacks
   { import = "astrocommunity.icon.mini-icons" },
 }
