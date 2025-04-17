@@ -1,28 +1,13 @@
--- Adapted from: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/file-explorer/oil-nvim/init.lua
----@type LazySpec
 return {
   "stevearc/oil.nvim",
   cmd = "Oil",
-  opts = {
-    view_options = {
-      show_hidden = true,
-      columns = {
-        {
-          "icon",
-          default_file = require("astroui").get_icon "DefaultFile",
-          directory = require("astroui").get_icon "FolderClosed",
-        },
-      },
-    },
-  },
-
   dependencies = {
     {
       "AstroNvim/astrocore",
       opts = {
         mappings = {
           n = {
-            ["<Leader>e"] = { function() require("oil").open() end, desc = "Open file explorer view" },
+            ["<Leader>O"] = { function() require("oil").open() end, desc = "Open folder in Oil" },
             ["-"] = { "<cmd>Oil<cr>", desc = "Open parent directory" },
             ["_"] = {
               function()
@@ -35,7 +20,7 @@ return {
           },
         },
         autocmds = {
-          oil_s4ttings = {
+          oil_settings = {
             {
               event = "FileType",
               desc = "Disable view saving for oil buffers",
@@ -80,8 +65,19 @@ return {
         end
       end,
     },
-
-    -- Disable neo-tree
-    { "neo-tree.nvim", optional = true, enabled = false },
   },
+  opts = function()
+    local get_icon = require("astroui").get_icon
+    return { columns = { { "icon", default_file = get_icon "DefaultFile", directory = get_icon "FolderClosed" } } }
+  end,
+  config = function()
+    require("oil").setup {
+      keymaps = {
+        ["<C-l>"] = false,
+        ["<C-h>"] = false,
+        ["<C-j>"] = false,
+        ["<C-k>"] = false,
+      },
+    }
+  end,
 }
