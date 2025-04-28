@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.recipes.auto-session-restore" },
   -- language
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.godot" },
   -- import/override with your plugins folder
 
