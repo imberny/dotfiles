@@ -121,9 +121,9 @@ alias ll='ls -l --color'
 alias lh='ll -h'
 
 # To use nvim as Godot's external code editor
-alias godot='~/Apps/Godot_v4.4-stable_linux.x86_64'
+alias godot='~/Apps/Godot_v4.5-stable_linux.x86_64'
 alias godot-mono='~/Apps/Godot_v4.4-stable_mono_linux.x86_64'
-alias gdvim='nvim -u ~/.config/nvim/gd_init.lua --listen /tmp/godot.pipe'
+alias gdvim='nvim --listen /tmp/godot.pipe'
 
 alias rider='~/.local/share/JetBrains/Toolbox/apps/rider/bin/rider'
 

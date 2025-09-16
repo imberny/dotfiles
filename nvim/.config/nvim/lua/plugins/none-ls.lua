@@ -16,7 +16,7 @@ return {
     opts.sources = require("astrocore").list_insert_unique(opts.sources, {
       -- Set linter
       null_ls.builtins.diagnostics.selene,
-      null_ls.builtins.diagnostics.gdlint,
+      -- null_ls.builtins.diagnostics.gdlint,
       null_ls.builtins.diagnostics.gitlint,
       null_ls.builtins.diagnostics.pylint,
       -- Set a formatter

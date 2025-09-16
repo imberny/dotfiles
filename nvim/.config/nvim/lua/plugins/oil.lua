@@ -77,6 +77,7 @@ return {
         ["<C-h>"] = false,
         ["<C-j>"] = false,
         ["<C-k>"] = false,
+        ["<C-s>"] = false,
       },
     }
   end,
