@@ -66,18 +66,23 @@ return {
       end,
     },
   },
+  config = true,
   opts = function()
     local get_icon = require("astroui").get_icon
-    return { columns = { { "icon", default_file = get_icon "DefaultFile", directory = get_icon "FolderClosed" } } }
-  end,
-  config = function()
-    require("oil").setup {
+    return {
+      columns = { { "icon", default_file = get_icon "DefaultFile", directory = get_icon "FolderClosed" } },
+      view_options = {
+        show_hidden = true,
+      },
       keymaps = {
         ["<C-l>"] = false,
         ["<C-h>"] = false,
         ["<C-j>"] = false,
         ["<C-k>"] = false,
         ["<C-s>"] = false,
+      },
+      win_options = {
+        signcolumn = "yes:2",
       },
     }
   end,

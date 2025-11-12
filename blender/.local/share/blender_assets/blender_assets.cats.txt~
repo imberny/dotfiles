@@ -8,4 +8,9 @@ VERSION 1
 
 f8038bea-e32e-47c1-92be-0305a5024cac:Brushes:Brushes
 3b9e46c1-c5a7-49c9-940e-249e5c154180:Brushes/Mesh Texture Paint:Brushes-Mesh Texture Paint
+261b6650-a954-42d6-9be7-02727d3eb9ef:Human Base Meshes:Human Base Meshes
+f7165ac8-14a4-4c82-9c7f-e69a649f50ef:Human Base Meshes/Planar:Human Base Meshes-Planar
+e558097f-1706-4bf3-9e11-f40395a8e195:Human Base Meshes/Primitives:Human Base Meshes-Primitives
+fe53c157-b313-482f-b7a3-69e260232e6f:Human Base Meshes/Realistic:Human Base Meshes-Realistic
+bda36abe-4601-40ae-acf5-38b5d6df5324:Human Base Meshes/Stylized:Human Base Meshes-Stylized
 d852e2b0-03f9-4066-baa8-e0b16be7259d:Procedural Materials:Procedural Materials

@@ -89,12 +89,18 @@ return {
         -- Move Lines
         ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move Down" },
         ["<A-k>"] = { "<esc><cmd>m .-2<cr>==gi", desc = "Move Up" },
+
+        -- Save buffer
+        ["<C-s>"] = { "<esc><cmd>wa<cr>", desc = "Save buffer" },
       },
 
       v = {
         -- Move Lines
         ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move Down" },
         ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move Up" },
+
+        -- Save buffer
+        ["<C-s>"] = { "<esc><cmd>wa<cr>", desc = "Save buffer" },
       },
     },
   },
