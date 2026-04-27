@@ -134,7 +134,7 @@ alias emacs="emacsclient -c -a 'emacs'"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 alias blender='~/Apps/blender-4.5.3-linux-x64/blender'
-alias blender5='~/Apps/blender-5.0.1-linux-x64/blender'
+alias blender5='~/Apps/blender-5.1.1-linux-x64/blender'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
