@@ -121,7 +121,7 @@ alias ll='ls -l --color'
 alias lh='ll -h'
 
 # To use nvim as Godot's external code editor
-alias godot='~/Apps/Godot_v4.6-stable_linux.x86_64'
+alias godot='~/Apps/Godot_v4.7-stable_linux.x86_64'
 alias godot-mono='~/Apps/Godot_v4.4-stable_mono_linux.x86_64'
 alias gdvim='nvim --listen /tmp/godot.pipe'
 
@@ -134,7 +134,7 @@ alias emacs="emacsclient -c -a 'emacs'"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 alias blender='~/Apps/blender-4.5.3-linux-x64/blender'
-alias blender5='~/Apps/blender-5.1.1-linux-x64/blender'
+alias blender5='~/Apps/blender-5.1.2-linux-x64/blender'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
