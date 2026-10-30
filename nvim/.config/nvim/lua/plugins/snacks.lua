@@ -1,15 +1,39 @@
 return {
     "folke/snacks.nvim",
+    lazy = false,
+    priority = 1000,
     ---@type snacks.config
     opts = {
         -- Enable specific snacks packages/modules
-        picker = { enabled = true },
+        picker = {
+            enabled = true,
+            sources = {
+                files = {
+                    exclude = vim.opt.wildignore:get(),
+                    -- exclude = { "*.o", "*~", "*.pyc", "*.gd.uid", "*.gdshader.uid" },
+                },
+                grep = {
+                    exclude = vim.opt.wildignore:get(),
+                },
+            },
+        },
+        status_column = {
+            enabled = true,
+        },
         notifier = {
             enabled = true,
             -- your notifier configuration comes here
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
         },
+        lazygit = { enabled = true },
+        bufdelete = { enabled = true },
+        quickfile = {
+            enabled = true,
+            exclude = { "latex" },
+        },
+        scope = { enabled = true },
+        -- words = { enabled = true },
     },
     keys = {
         -- Top Pickers & Explorer
@@ -28,7 +52,14 @@ return {
         { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
         { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
         { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent" },
+        -- buffer
+        { "<leader>q", function() Snacks.bufdelete() end, desc = "Close buffer" },
+        { "<leader>bc", function() Snacks.bufdelete() end, desc = "Close buffer" },
+        { "<leader>bC", function() Snacks.bufdelete.all() end, desc = "Close all buffers" },
+        { "<leader>bI", function() Snacks.bufdelete.invisible() end, desc = "Close invisible buffers" },
+        { "<leader>bO", function() Snacks.bufdelete.other() end, desc = "Close other buffers" },
         -- git
+        { "<leader>gg", function() Snacks.lazygit() end, desc = "LazyGit" },
         { "<leader>gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
         { "<leader>gl", function() Snacks.picker.git_log() end, desc = "Git Log" },
         { "<leader>gL", function() Snacks.picker.git_log_line() end, desc = "Git Log Line" },

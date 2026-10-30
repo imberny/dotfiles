@@ -29,7 +29,7 @@ return {
             ---end of the buffer will only be hidden inside the active window. Inside
             ---inactive windows, the end of buffer filler characters will be visible in
             ---dimmed symbols. This is due to the way Vim and Neovim handle `EndOfBuffer`.
-            dim_inactive_windows = false,
+            dim_inactive_windows = true,
             ---Some plugins support highlighting error/warning/info/hint texts, by
             ---default these texts are only underlined, but you can use this option to
             ---also highlight the background of them.

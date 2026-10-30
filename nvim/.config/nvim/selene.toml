@@ -1,4 +1,4 @@
-std = "neovim+snacks"
+std = "neovim"
 
 [rules]
 global_usage = "allow"

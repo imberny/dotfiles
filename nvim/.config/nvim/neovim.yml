@@ -6,3 +6,24 @@ lua_versions:
 globals:
   vim:
     any: true
+  assert:
+    args:
+      - type: bool
+      - type: string
+        required: false
+  after_each:
+    args:
+      - type: function
+  before_each:
+    args:
+      - type: function
+  describe:
+    args:
+      - type: string
+      - type: function
+  it:
+    args:
+      - type: string
+      - type: function
+  Snacks:
+    any: true
