@@ -21,6 +21,8 @@ if [[ "$TERM" != "linux" ]]; then
 	eval "$(starship init zsh)"
 fi
 
+export RIPGREP_CONFIG_PATH=~/.config/ripgrep/config
+
 # For some reason, blendkit addon keeps creating this useless dir
 rm blenderkit_data -rf
 
