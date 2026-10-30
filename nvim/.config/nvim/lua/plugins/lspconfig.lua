@@ -19,6 +19,20 @@ return {
 
             vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end, { desc = "Autocomplete" })
 
+            vim.keymap.set("n", "<leader>lo", ":lopen<cr>", { desc = "Open location list", silent = true })
+            vim.keymap.set("n", "<leader>lc", ":lclose<cr>", { desc = "Close location list", silent = true })
+
+            vim.keymap.set("n", "<A-s>", function() vim.lsp.buf.signature_help() end, { desc = "Signature help" })
+            vim.keymap.set("i", "<A-s>", function() vim.lsp.buf.signature_help() end, { desc = "Signature help" })
+            vim.keymap.set("n", "<leader>ls", function() vim.lsp.buf.signature_help() end, { desc = "Signature help" })
+
+            vim.keymap.set(
+                "n",
+                "<leader>lS",
+                function() vim.lsp.buf.document_symbol() end,
+                { desc = "Document symbols" }
+            )
+
             vim.keymap.set("i", "<C-j>", function() -- intercept C-j to move down completion list
                 if vim.fn.pumvisible() == 1 then return "<C-n>" end
                 return "<C-j>"
