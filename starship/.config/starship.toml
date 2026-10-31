@@ -3,11 +3,11 @@
 format = """
 [](red)\
 $os\
-$username\
+$username(bold)\
 [](bg:peach fg:red)\
-$directory\
+$directory(bold)\
 [](bg:yellow fg:peach)\
-$git_branch\
+$git_branch(bold)\
 $git_status\
 [](fg:yellow bg:green)\
 $c\
@@ -24,7 +24,7 @@ $python\
 $docker_context\
 $conda\
 [](fg:sapphire bg:lavender)\
-$time\
+$time(bold)\
 [ ](fg:lavender)\
 $cmd_duration\
 $line_break\
