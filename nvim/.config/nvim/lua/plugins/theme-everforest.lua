@@ -16,7 +16,7 @@ return {
             italics = false,
             ---Disable italic fonts for comments. Comments are in italics by default, set
             ---this to `true` to make them _not_ italic!
-            disable_italic_comments = false,
+            disable_italic_comments = true,
             ---By default, the colour of the sign column background is the same as the as normal text
             ---background, but you can use a grey background by setting this to `"grey"`.
             sign_column_background = "none",
