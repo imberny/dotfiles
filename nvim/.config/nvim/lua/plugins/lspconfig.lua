@@ -17,10 +17,12 @@ return {
                 end,
             })
 
-            vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end, { desc = "Autocomplete" })
+            vim.keymap.set("i", "<C-Space>", vim.lsp.completion.get, { desc = "Autocomplete" })
 
             vim.keymap.set("n", "<leader>lo", ":lopen<cr>", { desc = "Open location list", silent = true })
             vim.keymap.set("n", "<leader>lc", ":lclose<cr>", { desc = "Close location list", silent = true })
+
+            vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename symbol" })
 
             vim.keymap.set("n", "<A-s>", function() vim.lsp.buf.signature_help() end, { desc = "Signature help" })
             vim.keymap.set("i", "<A-s>", function() vim.lsp.buf.signature_help() end, { desc = "Signature help" })

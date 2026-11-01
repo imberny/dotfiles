@@ -90,7 +90,7 @@ return {
                 return m ~= nil
             end,
             -- This function defines what will never be shown, even when `show_hidden` is set
-            is_always_hidden = function(name, bufnr) return false end,
+            is_always_hidden = function(name, bufnr) return name:find "%.uid$" end, -- ignore godot .uid files
             -- Sort file names with numbers in a more intuitive order for humans.
             -- Can be "fast", true, or false. "fast" will turn it off for large directories.
             natural_order = "fast",
