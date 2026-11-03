@@ -13,9 +13,7 @@ vim.g.maplocalleader = "\\"
 -- See `:h vim.o`
 -- NOTE: You can change these options as you wish!
 -- For more options, you can see `:h option-list`
--- To see documentation for an option, you can use `:h 'optionname'`, for example `:h 'number'`
--- (Note the single quotes)
-
+-- To see documentation for an option, you can use `:h 'optionname'`, for example `:h 'number'` (Note the single quotes)
 vim.o.number = true -- Show line numbers in a column.
 
 -- Show line numbers relative to where the cursor is.
@@ -138,6 +136,8 @@ vim.keymap.set({ "n", "v" }, "<leader>/", "gcc", { desc = "Toggle Comment", rema
 vim.keymap.set({ "n", "i", "v" }, "<C-/>", "gcc<esc>", { desc = "Toggle Comment", remap = true, silent = true })
 -- Save buffer
 vim.keymap.set({ "n", "i", "v" }, "<C-s>", "<esc><cmd>wa<cr>", { desc = "Save buffer", silent = true })
+-- Clear highlight
+vim.keymap.set({ "n" }, "<A-8>", ":noh<cr>", { desc = "Clear highlights", silent = true })
 
 -- AUTOCOMMANDS (EVENT HANDLERS)
 --
