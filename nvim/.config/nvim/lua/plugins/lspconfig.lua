@@ -18,6 +18,7 @@ return {
             })
 
             vim.keymap.set("i", "<C-Space>", vim.lsp.completion.get, { desc = "Autocomplete" })
+            vim.keymap.set("i", "<C-g>", vim.lsp.completion.get, { desc = "Autocomplete" }) -- in Windows, seems like C-Space is interrupted
 
             vim.keymap.set("n", "<leader>lo", ":lopen<cr>", { desc = "Open location list", silent = true })
             vim.keymap.set("n", "<leader>lc", ":lclose<cr>", { desc = "Close location list", silent = true })
